@@ -5,7 +5,6 @@ import { useState } from 'react'
 import './styles/index.css'
 
 import Form from './components/form.jsx'
-import Cv from './components/cv.jsx'
 
 const headerInputs = {
     //["Content to display", "Optional Link"]
@@ -86,15 +85,6 @@ function HandleVisible({headerInputs, proSummary, education, workExp, skills, ce
                 {viewModeValue ? "edit" : "view"}
             </button>
 
-            {viewModeValue ? 
-            <Cv
-                headerInputs = {headerInputs}
-                proSummary = {proSummary}
-                education = {education}
-                workExp = {workExp}
-                skills = {skills}
-                certs = {certs}
-            /> :
             <Form
                 headerInputs = {headerInputs}
                 proSummary = {proSummary}
@@ -102,7 +92,8 @@ function HandleVisible({headerInputs, proSummary, education, workExp, skills, ce
                 workExp = {workExp}
                 skills = {skills}
                 certs = {certs}
-            />}
+                mode = {viewModeValue}
+            />
         </>
     );
 };
