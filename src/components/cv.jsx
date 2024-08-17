@@ -1,8 +1,17 @@
-import { useState } from 'react'
 
-function Cv() {
+function Cv({
+    headerInputs,
+    proSummary,
+    education,
+    workExp,
+    skills,
+    certs
+}) {
+
     return (
-        <h1>Hello from CV</h1>
+        <>
+            <h1>HELLO FROM CV</h1>
+        </>
     );
 };
 

@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 import './styles/index.css'
 
+import Form from './components/form.jsx'
+import Cv from './components/cv.jsx'
 
 const headerInputs = {
     //["Content to display", "Optional Link"]
@@ -73,8 +75,35 @@ const certs = [
 ];
 
 function HandleVisible({headerInputs, proSummary, education, workExp, skills, certs}) {
+    const [viewModeValue, setViewModeValue] = useState(true)
+
     return(
-        <h1>Hello from main.jsx</h1>
+        <>
+            <button 
+                className="modeBtn"
+                onClick={() => setViewModeValue(viewModeValue ? false : true)}
+            >
+                {viewModeValue ? "edit" : "view"}
+            </button>
+
+            {viewModeValue ? 
+            <Cv
+                headerInputs = {headerInputs}
+                proSummary = {proSummary}
+                education = {education}
+                workExp = {workExp}
+                skills = {skills}
+                certs = {certs}
+            /> :
+            <Form
+                headerInputs = {headerInputs}
+                proSummary = {proSummary}
+                education = {education}
+                workExp = {workExp}
+                skills = {skills}
+                certs = {certs}
+            />}
+        </>
     );
 };
 

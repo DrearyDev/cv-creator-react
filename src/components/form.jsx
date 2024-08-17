@@ -1,8 +1,17 @@
-import { useState } from 'react'
 
-function Form() {
+function Form({
+    headerInputs,
+    proSummary,
+    education,
+    workExp,
+    skills,
+    certs
+}) {
+
     return (
-        <h1>Hello from Form</h1>
+        <>
+            <h1>HELLO FROM FORM</h1>
+        </>
     );
 };
 
