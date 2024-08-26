@@ -8,11 +8,11 @@ import Form from './components/form.jsx'
 
 const headerInputs = {
     //["Content to display", "Optional Link"]
-    name: ["Jhon Doe", ""],
-    phoneNum: ["123-456-7890", ""],
+    name: ["Jhon Doe", null],
+    phoneNum: ["123-456-7890", null],
     email: ["fakeemail@email.com", "mailto:fakeemail@email.com"],
     github: ["jhondoe", "https://github.com/jhondoe"],
-    linkedin: ["jhondoe4", ""]
+    linkedin: ["jhondoe4", null]
 };
 
 const proSummary = `Hardworking Software Engineer with more than five years of experience
@@ -82,7 +82,7 @@ function HandleVisible({headerInputs, proSummary, education, workExp, skills, ce
                 className="modeBtn"
                 onClick={() => setViewModeValue(viewModeValue ? false : true)}
             >
-                {viewModeValue ? "edit" : "view"}
+                {viewModeValue ? "Edit" : "View"}
             </button>
 
             <Form
@@ -92,7 +92,7 @@ function HandleVisible({headerInputs, proSummary, education, workExp, skills, ce
                 workExp = {workExp}
                 skills = {skills}
                 certs = {certs}
-                mode = {viewModeValue}
+                viewMode = {viewModeValue}
             />
         </>
     );
