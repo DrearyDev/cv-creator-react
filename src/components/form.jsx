@@ -1,4 +1,5 @@
 import Header from './header.jsx'
+import ProSummary from './prosummary.jsx'
 
 function Form({
     headerInputs,
@@ -20,6 +21,16 @@ function Form({
                     <Header
                         headerInputs = {headerInputs}
 
+                        viewMode = {viewMode}
+                    />
+                </div> : ""
+            }
+
+            {proSummary ?
+                <div className="prosummary">
+                    <h1>Proffesional Summary</h1>
+                    <ProSummary
+                        proSummary = {proSummary}
                         viewMode = {viewMode}
                     />
                 </div> : ""
