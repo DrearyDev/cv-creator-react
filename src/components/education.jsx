@@ -24,11 +24,35 @@ function Education({education, viewMode}){
                 }
             </> :
             <>
+                <button
+                    onClick={() => {
+                        let tmp = structuredClone(educationValue);
+                        tmp.push({
+                            school: "",
+                            gradYear: "",
+                            studyField: "",
+                            degree: ""
+                        })
+                        setEducationValue(tmp);
+                    }}
+                >
+                    Add Section
+                </button>
                 {
                     educationValue.map((eduobj, i) => {
                         return(
                             <div key={i}>
                                 <hr/>
+                                <button
+                                    onClick={e => {
+                                        let tmp = structuredClone(educationValue);
+                                        tmp.splice(i,1);
+                                        setEducationValue(tmp);
+                                    }}
+                                >
+                                    Remove Section
+                                </button>
+
                                 <ul>
                                     <li>
                                         <p>School:</p>
