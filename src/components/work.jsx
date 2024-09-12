@@ -41,7 +41,7 @@ function Work({workExp, viewMode}){
                     onClick={() => {
                         let tmp = structuredClone(workExpValue);
                         tmp.push({
-                            id: workExpValue[workExpValue.length-1].id + 1,
+                            id: workExpValue.length > 0 ? workExpValue[workExpValue.length-1].id + 1 : 0,
                             jobTitle: "",
                             employmentDates: "",
                             bulletPoints: [
