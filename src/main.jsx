@@ -35,6 +35,7 @@ const education = [
 
 const workExp = [
     {
+        id: 0,
         jobTitle: "Frontend Software Engineer",
         employmentDates: "2002 - 2020",
         bulletPoints: [
@@ -44,6 +45,7 @@ const workExp = [
         ]
     },
     {
+        id: 1,
         jobTitle: "Fullstack Software Engineer",
         employmentDates: "2021 - 2024",
         bulletPoints: [

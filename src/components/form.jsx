@@ -1,6 +1,7 @@
 import Header from './header.jsx'
 import ProSummary from './prosummary.jsx'
 import Education from './education.jsx'
+import Work from './work.jsx'
 
 function Form({
     headerInputs,
@@ -43,6 +44,17 @@ function Form({
                     <h1>Education</h1>
                     <Education
                         education = {education}
+                        viewMode = {viewMode}
+                    />
+                </div> : ""
+            }
+
+
+            {workExp.length > 0 ?
+                <div className="workexp">
+                    <h1>Work Experience</h1>
+                    <Work
+                        workExp = {workExp}
                         viewMode = {viewMode}
                     />
                 </div> : ""
