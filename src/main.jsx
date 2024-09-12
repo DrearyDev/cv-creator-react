@@ -20,12 +20,14 @@ with frontend development and 3 years of experience with full-stack development.
 
 const education = [
     {
+        id: 0,
         school: "Carter G Woodson High-School",
         gradYear: "2016 - 2020",
         studyField: "", // leaving blank should not render anything for that option
         degree: "High school Degree"
     },
     {
+        id: 1,
         school: "Fake School University",
         gradYear: "2020 - 2024",
         studyField: "Computer Science",

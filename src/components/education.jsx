@@ -3,6 +3,11 @@ import {useState} from 'react';
 function Education({education, viewMode}){
     const [educationValue, setEducationValue] = useState(education);
 
+    function handleRemove(id) {
+        const newlist = educationValue.filter((obj) => obj.id !== id);
+        setEducationValue(newlist);
+    };
+
     return(
         viewMode ?
             <>
@@ -28,6 +33,7 @@ function Education({education, viewMode}){
                     onClick={() => {
                         let tmp = structuredClone(educationValue);
                         tmp.push({
+                            id: educationValue.length > 0 ? educationValue[educationValue.length-1].id + 1 : 0,
                             school: "",
                             gradYear: "",
                             studyField: "",
@@ -41,14 +47,10 @@ function Education({education, viewMode}){
                 {
                     educationValue.map((eduobj, i) => {
                         return(
-                            <div key={i}>
+                            <div key={eduobj.id}>
                                 <hr/>
                                 <button
-                                    onClick={e => {
-                                        let tmp = structuredClone(educationValue);
-                                        tmp.splice(i,1);
-                                        setEducationValue(tmp);
-                                    }}
+                                    onClick={() => handleRemove(eduobj.id)}
                                 >
                                     Remove Section
                                 </button>
