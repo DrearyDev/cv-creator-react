@@ -59,14 +59,38 @@ const workExp = [
 ];
 
 const skills = [
-    "HTML",
-    "CSS",
-    "Javascript",
-    "React",
-    "Linux",
-    "Node",
-    "JSON",
-    "JSX"
+    {
+        id: 0,
+        skill: "HTML"
+    },
+    {
+        id: 1,
+        skill: "CSS"
+    },
+    {
+        id: 2,
+        skill: "Javascript"
+    },
+    {
+        id: 3,
+        skill: "React"
+    },
+    {
+        id: 4,
+        skill: "Linux"
+    },
+    {
+        id: 5,
+        skill: "Node"
+    },
+    {
+        id: 6,
+        skill: "JSON"
+    },
+    {
+        id: 7,
+        skill: "JSX"
+    }
 ];
 
 const certs = [
