@@ -94,11 +94,26 @@ const skills = [
 ];
 
 const certs = [
-    //["Name of certification", "Optional link to Certification"]
-    ["Comptia A+", "https://www.comptia.org/certifications/a"],
-    ["Comptia Network+", "https://www.comptia.org/certifications/network"],
-    ["Comptia Security+", "https://www.comptia.org/certifications/security"],
-    ["Comptia Linux+", "https://www.comptia.org/certifications/linux"]
+    {
+        id: 0,
+        certName: "Comptia A+",
+        certLink: "https://www.comptia.org/certifications/a"
+    },
+    {
+        id: 1,
+        certName: "Comptia Network+",
+        certLink: "https://www.comptia.org/certifications/network"
+    },
+    {
+        id: 2,
+        certName: "Comptia Security+",
+        certLink: "https://www.comptia.org/certifications/security"
+    },
+    {
+        id: 3,
+        certName: "Comptia Linux+",
+        certLink: "https://www.comptia.org/certifications/linux"
+    }
 ];
 
 function HandleVisible({headerInputs, proSummary, education, workExp, skills, certs}) {
