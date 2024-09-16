@@ -3,6 +3,7 @@ import ProSummary from './prosummary.jsx'
 import Education from './education.jsx'
 import Work from './work.jsx'
 import SkillList from './skilllist.jsx'
+import CertList from './certlist.jsx'
 
 function Form({
     headerInputs,
@@ -70,6 +71,17 @@ function Form({
                     />
                 </div> : ""
             }
+
+            {certs.length > 0 ?
+                <div>
+                    <h1>Certifications</h1>
+                    <CertList
+                        certs = {certs}
+                        viewMode = {viewMode}
+                    />
+                </div> : ""
+            }
+
         </>
     );
 };
