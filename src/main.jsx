@@ -2,8 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { useState } from 'react'
 
-import './styles/index.css'
-
 import Form from './components/form.jsx'
 
 const headerInputs = {
@@ -119,11 +117,23 @@ const certs = [
 function HandleVisible({headerInputs, proSummary, education, workExp, skills, certs}) {
     const [viewModeValue, setViewModeValue] = useState(true)
 
+    function toggleTheme(viewModeValue) {
+        const theme = document.getElementsByTagName('link')[0];
+
+        viewModeValue ?
+            theme.setAttribute('href', './src/styles/edit.css')
+        :
+            theme.setAttribute('href', './src/styles/view.css');
+    }
+
     return(
         <>
             <button 
                 className="modeBtn"
-                onClick={() => setViewModeValue(viewModeValue ? false : true)}
+                onClick={() => {
+                    toggleTheme(viewModeValue);
+                    setViewModeValue(viewModeValue ? false : true);
+                }}
             >
                 {viewModeValue ? "Edit" : "View"}
             </button>
