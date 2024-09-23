@@ -8,7 +8,7 @@ function Header({headerInputs, viewMode}) {
             //create a function to convert links without 'https://' to still work
             <ul>
                 {headerInputsValue.name[0] ? //only render if value given
-                <li>
+                <li className="name">
                     <a href={headerInputsValue.name[1]}>
                         {headerInputsValue.name[0]}
                     </a>

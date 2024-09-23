@@ -2,3 +2,35 @@
 body {
     background-color: lightgreen;
 }
+
+ul {
+    list-style: none;
+}
+
+.header {
+    margin: 50px;
+}
+
+.prosummary {
+    margin: 50px;
+}
+.prosummary textarea {
+    width: 100%;
+    height: 50px;
+}
+
+.education {
+    margin: 50px;
+}
+
+.workexp {
+    margin: 50px;
+}
+
+.skills {
+    margin: 50px;
+}
+
+.certs {
+    margin: 50px;
+}

@@ -5,3 +5,20 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+#root {
+    max-width: 8.27in;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}

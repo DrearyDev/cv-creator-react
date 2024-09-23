@@ -2,3 +2,74 @@
 body {
     background-color: lightblue;
 }
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.header {
+    margin: 50px;
+}
+.header h1 {
+    display: none;
+}
+.header ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+.header ul .name {
+    width: 100%;
+    font-size: 3rem;
+}
+
+.prosummary {
+    margin: 50px;
+}
+
+.education {
+    margin: 50px;
+}
+.education div .school-grad-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.workexp {
+    margin: 50px;
+}
+.workexp div .job-employment-dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    margin: 50px;
+}
+.skills ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certs {
+    margin: 50px;
+}
+
+
+
+
+@media print {
+    button {
+        position: absolute;
+        display: none;
+    }
+}
