@@ -128,15 +128,24 @@ function HandleVisible({headerInputs, proSummary, education, workExp, skills, ce
 
     return(
         <>
-            <button 
-                className="modeBtn"
-                onClick={() => {
-                    toggleTheme(viewModeValue);
-                    setViewModeValue(viewModeValue ? false : true);
-                }}
-            >
-                {viewModeValue ? "Edit" : "View"}
-            </button>
+            <div className="buttons">
+                <button 
+                    className="modeBtn"
+                    onClick={() => {
+                        toggleTheme(viewModeValue);
+                        setViewModeValue(viewModeValue ? false : true);
+                    }}
+                >
+                    {viewModeValue ? "Edit" : "View"}
+                </button>
+
+                <button
+                    className="printBtn"
+                    onClick={() => window.print()}
+                >
+                    Save/Print
+                </button>
+            </div>
 
             <Form
                 headerInputs = {headerInputs}
