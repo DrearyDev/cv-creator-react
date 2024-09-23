@@ -1,4 +1,8 @@
-import {useState} from 'react'
+import {useState} from 'react';
+import phone from '../assets/phone.png'
+import email from '../assets/email.png'
+import github from '../assets/github.png'
+import linkedin from '../assets/linkedin.png'
 
 function Header({headerInputs, viewMode}) {
     const [headerInputsValue, setHeaderInputsValue] = useState(headerInputs);
@@ -16,6 +20,7 @@ function Header({headerInputs, viewMode}) {
 
                 {headerInputsValue.phoneNum[0] ?
                 <li>
+                    <img className="icon" src={phone} />
                     <a href={headerInputsValue.phoneNum[1]}>
                         {headerInputsValue.phoneNum[0]}
                     </a>
@@ -23,6 +28,7 @@ function Header({headerInputs, viewMode}) {
 
                 {headerInputsValue.email[0] ?
                 <li>
+                    <img className="icon" src={email} />
                     <a href={headerInputsValue.email[1]}>
                         {headerInputsValue.email[0]}
                     </a>
@@ -30,6 +36,7 @@ function Header({headerInputs, viewMode}) {
 
                 {headerInputsValue.github[0] ?
                 <li>
+                    <img className="icon" src={github} />
                     <a href={headerInputsValue.github[1]}>
                         {headerInputsValue.github[0]}
                     </a>
@@ -37,6 +44,7 @@ function Header({headerInputs, viewMode}) {
 
                 {headerInputsValue.linkedin[0] ?
                 <li>
+                    <img className="icon" src={linkedin} />
                     <a href={headerInputsValue.linkedin[1]}>
                         {headerInputsValue.linkedin[0]}
                     </a>

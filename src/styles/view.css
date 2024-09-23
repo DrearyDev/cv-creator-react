@@ -31,6 +31,15 @@ h1 {
     width: 100%;
     font-size: 3rem;
 }
+.header ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header ul li .icon {
+    width: 20px;
+    height: 20px;
+}
 
 .prosummary {
     margin: 50px;
