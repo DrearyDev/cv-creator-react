@@ -73,11 +73,18 @@ h1 {
     margin: 50px;
 }
 
-
+.icons-link {
+    margin: 50px;
+}
 
 
 @media print {
     button {
+        position: absolute;
+        display: none;
+    }
+
+    .icons-link {
         position: absolute;
         display: none;
     }
