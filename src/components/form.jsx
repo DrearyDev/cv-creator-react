@@ -15,10 +15,9 @@ function Form({
     viewMode
 }) {
 
+            //<h1>MODE = {viewMode ? "View" : "Edit"}</h1>
     return (
         <>
-            <h1>MODE = {viewMode ? "View" : "Edit"}</h1>
-
             {Object.keys(headerInputs).length > 0 ?
                 <div className="header">
                     <h1>Header</h1>
@@ -73,7 +72,7 @@ function Form({
             }
 
             {certs.length > 0 ?
-                <div>
+                <div className="certs">
                     <h1>Certifications</h1>
                     <CertList
                         certs = {certs}
