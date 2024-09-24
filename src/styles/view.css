@@ -15,7 +15,7 @@ h1 {
 }
 
 .header {
-    margin: 50px;
+    margin: 25px;
 }
 .header h1 {
     display: none;
@@ -42,11 +42,11 @@ h1 {
 }
 
 .prosummary {
-    margin: 50px;
+    margin: 25px;
 }
 
 .education {
-    margin: 50px;
+    margin: 25px;
 }
 .education div .school-grad-title {
     display: flex;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .workexp {
-    margin: 50px;
+    margin: 25px;
 }
 .workexp div .job-employment-dates {
     display: flex;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .skills {
-    margin: 50px;
+    margin: 25px;
 }
 .skills ul {
     flex-wrap: wrap;
@@ -72,11 +72,11 @@ h1 {
 }
 
 .certs {
-    margin: 50px;
+    margin: 25px;
 }
 
 .icons-link {
-    margin: 50px;
+    margin: 25px;
 }
 
 
