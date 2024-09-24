@@ -10,16 +10,20 @@ function SkillList({ skills, viewMode }) {
 
     return(
         viewMode ?
-            <ul>
-                {
-                    skillsValue.map((skill, i) => {
-                        return(
-                            skill.skill ?
-                            <li key={skill.id}>{skill.skill}</li> : ""
-                        );
-                    })
-                }
-            </ul>
+            <>
+                <hr/>
+                <ul>
+                    {
+                        skillsValue.map((skill, i) => {
+                            return(
+                                skill.skill ?
+                                    <li key={skill.id}>{skill.skill}</li> : ""
+                            );
+                        })
+                    }
+                </ul>
+                <hr/>
+            </>
             :
             <>
                 <button onClick={()=> {

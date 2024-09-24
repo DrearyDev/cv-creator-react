@@ -5,24 +5,28 @@ function CertList({certs, viewMode}) {
 
     return(
         viewMode ?
-            <ul>
-                {
-                    certsValue.map((certobj) => {
-                        return(
-                            certobj.certLink ?
-                                <li key={certobj.id}>
-                                    <a href={certobj.certLink}>
-                                        {certobj.certName}
-                                    </a>
-                                </li>
-                                :
-                                certobj.certName ?
-                                    <li key={certobj.id}>{certobj.certName}</li>
-                                    : ""
-                        );
-                    })
-                }
-            </ul>
+            <>
+                <hr/>
+                <ul>
+                    {
+                        certsValue.map((certobj) => {
+                            return(
+                                certobj.certLink ?
+                                    <li key={certobj.id}>
+                                        <a href={certobj.certLink}>
+                                            {certobj.certName}
+                                        </a>
+                                    </li>
+                                    :
+                                    certobj.certName ?
+                                        <li key={certobj.id}>{certobj.certName}</li>
+                                        : ""
+                            );
+                        })
+                    }
+                </ul>
+                <hr/>
+            </>
             :
             <>
                 <button

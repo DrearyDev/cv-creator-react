@@ -65,8 +65,10 @@ h1 {
     margin: 50px;
 }
 .skills ul {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    row-gap: 10px;
 }
 
 .certs {

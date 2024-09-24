@@ -5,7 +5,11 @@ function ProSummary({proSummary, viewMode}){
 
     return(
         viewMode ?
-            <p>{proSummaryValue}</p>
+            <>
+                <hr/>
+                <p>{proSummaryValue}</p>
+                <hr/>
+            </>
         :
             <textarea
                 id="prosummary"
