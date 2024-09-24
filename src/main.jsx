@@ -14,7 +14,9 @@ const headerInputs = {
 };
 
 const proSummary = `Hardworking Software Engineer with more than five years of experience
-with frontend development and 3 years of experience with full-stack development.`;
+with frontend development and 3 years of experience with full-stack development. Shown
+to be proficient at solo and collaborative roles. Eager to tackle a challenging
+position to learn and grow my skills as an engineer.`;
 
 const education = [
     {
@@ -28,8 +30,8 @@ const education = [
         id: 1,
         school: "Fake School University",
         gradYear: "2020 - 2024",
-        studyField: "Computer Science",
-        degree: "Computer Science"
+        studyField: "Major: Computer Science",
+        degree: "4 year Computer Science Degree"
     },
 ];
 
