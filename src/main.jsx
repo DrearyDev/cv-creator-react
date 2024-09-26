@@ -118,15 +118,14 @@ const certs = [
 
 function HandleVisible({headerInputs, proSummary, education, workExp, skills, certs}) {
     const [viewModeValue, setViewModeValue] = useState(true)
-
-    function toggleTheme(viewModeValue) {
-        const theme = document.getElementsByTagName('link')[0];
-
-        viewModeValue ?
-            theme.setAttribute('href', './src/styles/edit.css')
-        :
-            theme.setAttribute('href', './src/styles/view.css');
-    }
+    const root = document.getElementById('root');
+    if(viewModeValue) {
+        root.classList.remove("edit")
+        root.classList.add("view")
+    } else {
+        root.classList.remove("view")
+        root.classList.add("edit");
+    } 
 
     return(
         <>
@@ -134,7 +133,6 @@ function HandleVisible({headerInputs, proSummary, education, workExp, skills, ce
                 <button 
                     className="modeBtn"
                     onClick={() => {
-                        toggleTheme(viewModeValue);
                         setViewModeValue(viewModeValue ? false : true);
                     }}
                 >

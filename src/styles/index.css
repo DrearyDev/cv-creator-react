@@ -16,9 +16,140 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    background-color: lightblue;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
+}
+
+/*VIEW STYLES*/
+#root.view ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#root.view h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#root.view .header {
+    margin: 25px;
+}
+#root.view .header h1 {
+    display: none;
+}
+#root.view .header ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+#root.view .header ul .name {
+    width: 100%;
+    font-size: 3rem;
+}
+#root.view .header ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#root.view .header ul li .icon {
+    width: 20px;
+    height: 20px;
+}
+
+#root.view .prosummary {
+    margin: 25px;
+}
+
+#root.view .education {
+    margin: 25px;
+}
+#root.view .education div .school-grad-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+#root.view .workexp {
+    margin: 25px;
+}
+#root.view .workexp div .job-employment-dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+#root.view .skills {
+    margin: 25px;
+}
+#root.view .skills ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+#root.view .certs {
+    margin: 25px;
+}
+
+#root.view .icons-link {
+    margin: 25px;
+}
+
+
+@media print {
+    #root.view button {
+        position: absolute;
+        display: none;
+    }
+
+    #root.view .icons-link {
+        position: absolute;
+        display: none;
+    }
+}
+
+/*EDIT STYLES*/
+#root.edit ul {
+    list-style: none;
+}
+
+#root.edit .header {
+    margin: 25px;
+}
+#root.edit .header h1 {
+    display: block;
+}
+
+#root.edit .prosummary {
+    margin: 25px;
+}
+#root.edit .prosummary textarea {
+    width: 100%;
+    height: 50px;
+}
+
+#root.edit .education {
+    margin: 25px;
+}
+
+#root.edit .workexp {
+    margin: 25px;
+}
+
+#root.edit .skills {
+    margin: 25px;
+}
+
+#root.edit .certs {
+    margin: 25px;
+}
+
+#root.edit .icons-link {
+    margin: 25px;
 }
